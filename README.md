@@ -1,8 +1,7 @@
-[![Docker Image CI](https://github.com/sebt3/hubzilla/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/sebt3/hubzilla/actions)
 
 # Hubzilla Docker image
 
-This is the packaging of [hubzilla](https://framagit.org/hubzilla/core) as a [docker image](https://hub.docker.com/r/sebt3/hubzilla) based on php:7.4-fpm-alpine in a multi-arch (amd64, arm, arm64) format.
+This is the packaging of [hubzilla](https://framagit.org/miklobit/core) as a [docker image](https://hub.docker.com/r/miklobit/hubzilla) based on php:7.4-fpm-alpine in a multi-arch (amd64, arm, arm64) format.
 
 ## Supported environnement variables:
 
