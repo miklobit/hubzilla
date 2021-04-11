@@ -31,5 +31,5 @@ This is the packaging of [hubzilla](https://framagit.org/hubzilla/core) as a [do
 
 ## Usage
 
-Please see the [install directory](https://github.com/sebt3/hubzilla/tree/master/install) for usage examples.
+Please see the [install directory](https://github.com/miklobit/hubzilla/tree/master/install) for usage examples.
 
