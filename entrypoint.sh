@@ -67,7 +67,7 @@ FromLineOverride=YES
 END
 if [ ${SMTP_PASS:-"nope"} != "nope" ];then
 	cat >> /etc/ssmtp/ssmtp.conf <<END
-AuthUser=${SMTP_USER}
+AuthUser=${SMTP_LOGIN}
 AuthPass=${SMTP_PASS}
 END
 fi
