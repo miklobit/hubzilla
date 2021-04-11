@@ -2,7 +2,7 @@ FROM alpine:latest as build
 RUN sed -i 's/dl-cdn.alpinelinux.org/ftp.halifax.rwth-aachen.de/g' /etc/apk/repositories \
  && apk add bash curl gd php7 php7-curl php7-gd php7-json php7-openssl php7-xml php7-pecl-imagick php7-pgsql php7-mysqli php7-mbstring php7-pecl-mcrypt php7-zip \
  && apk add git patch \
- && git clone https://framagit.org/hubzilla/core.git /hubzilla
+ && git clone https://framagit.org/miklobit/core.git /hubzilla
 WORKDIR /hubzilla
 COPY entrypoint.sh /hubzilla
 COPY .tags /tmp/
@@ -44,6 +44,7 @@ VOLUME /var/www/html
 ENV SMTP_HOST smtp.domain.com
 ENV SMTP_PORT 587
 ENV SMTP_DOMAIN domain.com
+ENV SMTP_LOGIN login
 ENV SMTP_USER user
 ENV SMTP_PASS password
 ENV SMTP_USE_STARTTLS YES
