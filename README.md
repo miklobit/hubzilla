@@ -18,6 +18,7 @@ This is the packaging of [hubzilla](https://framagit.org/hubzilla/core) as a [do
 | SMTP_PORT | 587 | Mail server port number |
 | SMTP_USER | user | User name for the mail server  |
 | SMTP_DOMAIN | domain.com | Mail domain |
+| SMTP_LOGIN | login | login for the mail server  |
 | SMTP_PASS | password | Password for the user on the mail server, if set empty, then no authentication on the smtp server will be used |
 | HUBZILLA_DOMAIN | domain.com | Web domain  name for hubzilla |
 | HUBZILLA_ADMIN |  | email of this hubzilla administrator (you)   |
