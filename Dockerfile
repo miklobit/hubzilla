@@ -8,8 +8,9 @@ COPY entrypoint.sh /hubzilla
 COPY .tags /tmp/
 RUN sed 's/,.*//' /tmp/.tags >/hubzilla/version \
  && chmod +x /hubzilla/entrypoint.sh \
- && git pull \
- && git checkout tags/$(cat /hubzilla/version) \
+# build from master 
+# && git pull \
+# && git checkout tags/$(cat /hubzilla/version) \
  && rm -rf .git \
  && mkdir -p "store/[data]/smarty3" \
  && util/add_widget_repo https://framagit.org/hubzilla/widgets.git hubzilla-widgets \
